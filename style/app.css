@@ -1,4 +1,4 @@
-.container {
+.player__container {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -7,21 +7,23 @@
   background-color: gold;
 }
 
-.player {
-  width: 50rem;
+.player__video {
+  width: 70rem;
 }
 
-.blue {
-  width: 30rem;
-  height: 3em;
+.player__poster__container {
+  margin-top: 1rem;
+  width: 70rem;
+  height: 10em;
   background-color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.green {
-  width: 2em;
-  height: 2em;
+.player__poster {
+  margin-right: 1rem;
+  flex-grow: 1;
+  height: 100%;
   background-color: green;
 }
