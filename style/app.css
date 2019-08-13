@@ -7,10 +7,8 @@
   background-color: gold;
 }
 
-.red {
-  width: 30rem;
-  height: 3em;
-  background-color: red;
+.player {
+  width: 50rem;
 }
 
 .blue {
