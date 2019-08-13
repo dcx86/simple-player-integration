@@ -4,18 +4,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: gold;
+  background-color: #f9f9f9;
 }
 
 .player__video {
-  width: 70rem;
+  width: 60rem;
 }
 
 .player__poster__container {
+  width: 60rem;
   margin-top: 1rem;
-  width: 70rem;
-  height: 10em;
-  background-color: blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +21,34 @@
 
 .player__poster {
   margin-right: 1rem;
-  flex-grow: 1;
-  height: 100%;
-  background-color: green;
+  position: relative; 
+}
+
+.player__poster > img {
+  margin: 3rem;
+}
+
+.player__poster__description {
+  visibility: hidden;
+  width: 12rem;
+  height: 12rem;
+  background-color: #FFF;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.player__poster .player__poster__description::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100%
+}
+
+.player_poster:hover .player__poster__description {
+  display: block;
 }
